@@ -1,6 +1,7 @@
 
-import BaseError from "../../../../policies/BaseError";
-import { BaseSpecification } from "../../../../policies/BaseSpecification";
+
+import BaseError from "../../../../infrastructure/policies/BaseError";
+import { BaseSpecification } from "../../../../infrastructure/policies/BaseSpecification";
 import { ProductCategories, ProductToSellProps } from "../../../products/Product";
 import { User } from "../../../users/User";
 

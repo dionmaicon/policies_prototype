@@ -2,8 +2,9 @@
  * Represents a specification that checks if the quantity of products to be sold is within the allowed limit.
  */
 
-import BaseError from "../../../../policies/BaseError";
-import { BaseSpecification } from "../../../../policies/BaseSpecification";
+
+import BaseError from "../../../../infrastructure/policies/BaseError";
+import { BaseSpecification } from "../../../../infrastructure/policies/BaseSpecification";
 import { ProductToSellProps } from "../../../products/Product";
 
 export default class QuantitySpecification extends BaseSpecification {

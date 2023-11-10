@@ -1,5 +1,4 @@
-import { BasePolicy } from "../../../policies/BasePolicy";
-
+import { BasePolicy } from "../../../infrastructure/policies/BasePolicy";
 
 export class CreateOrderDiscountPolicy extends BasePolicy {
     constructor() {

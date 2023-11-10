@@ -3,7 +3,7 @@
  */
 
 
-import { BaseSpecification } from "../../../../policies/BaseSpecification";
+import { BaseSpecification } from "../../../../infrastructure/policies/BaseSpecification";
 import { ProductToSellProps } from "../../../products/Product";
 
 export default class ProductToExpireSpecification extends BaseSpecification {

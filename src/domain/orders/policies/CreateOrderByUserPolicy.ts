@@ -1,4 +1,4 @@
-import { BasePolicy } from "../../../policies/BasePolicy";
+import { BasePolicy } from "../../../infrastructure/policies/BasePolicy";
 
 export class CreateOrderByUserPolicy extends BasePolicy {
     constructor() {

@@ -8,8 +8,7 @@ import DrinksSpecification from "../policies/specifications/DrinksSpecification"
 import QuantitySpecification from "../policies/specifications/QuantitySpecification";
 import { CreateOrderDiscountPolicy } from "../policies/CreateOrderDiscountPolicy";
 import ProductToExpireSpecification from "../policies/specifications/ProductToExpireSpecification";
-import { PolicyCallbackHandler } from "../../../policies/PolicyCallbackHandler";
-
+import { PolicyCallbackHandler } from "../../../infrastructure/policies/PolicyCallbackHandler";
 
 
 export class OrderFactory {

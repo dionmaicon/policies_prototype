@@ -1,4 +1,5 @@
-import { BaseError } from "../../../BaseError";
+import BaseError from "../BaseError";
+
 
 export default interface ISpecification {
     satisfied: boolean;
