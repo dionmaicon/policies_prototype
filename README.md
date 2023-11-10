@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Writing policies and specifications is an important part of software development, especially when following the Domain-Driven Design (DDD) approach by Eric Evans. Policies and specifications help define the expected behavior of the system in different scenarios and ensure that the software meets business requirements. In this tutorial, we will explore how to write policies and specifications using DDD.
+Writing policies and specifications is an important part of software development, especially when following the Domain-Driven Design (DDD) approach by Eric Evans. Policies and specifications help define the expected behavior of the system in different scenarios and ensure that the software meets business requirements. We will explore how to write policies and specifications using DDD.
 
 ## What are Policies and Specifications?
 
@@ -69,8 +69,3 @@ export default class ProductToExpireSpecification extends BaseSpecification {
     }
 }
 ```
-
-
-## Conclusion
-
-Writing policies and specifications is an important part of software development, especially when following the Domain-Driven Design (DDD) approach by Eric Evans. Policies and specifications help define the expected behavior of the system in different scenarios and ensure that the software meets business requirements. I hope this tutorial has been useful for you to start writing your own policies and specifications.

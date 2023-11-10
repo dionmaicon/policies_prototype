@@ -2,7 +2,7 @@
 
 ## Introdução
 
-A escrita de políticas e especificações é uma parte importante do desenvolvimento de software, especialmente quando se segue a abordagem de Domain-Driven Design (DDD) de Eric Evans. As políticas e especificações ajudam a definir o comportamento esperado do sistema em diferentes cenários e a garantir que o software atenda aos requisitos do negócio. Neste tutorial, vamos explorar como escrever políticas e especificações usando DDD.
+A escrita de políticas e especificações é uma parte importante do desenvolvimento de software, especialmente quando se segue a abordagem de Domain-Driven Design (DDD) de Eric Evans. As políticas e especificações ajudam a definir o comportamento esperado do sistema em diferentes cenários e a garantir que o software atenda aos requisitos do negócio. Vamos explorar como escrever políticas e especificações usando DDD.
 
 ## O que são Políticas e Especificações?
 
@@ -68,8 +68,3 @@ export default class ProductToExpireSpecification extends BaseSpecification {
     }
 }
 ```
-
-
-## Conclusão
-
-Escrever políticas e especificações é uma parte importante do desenvolvimento de software, especialmente quando se segue a abordagem de Domain-Driven Design (DDD) de Eric Evans. As políticas e especificações ajudam a definir o comportamento esperado do sistema em diferentes cenários e a garantir que o software atenda aos requisitos do negócio. Espero que este tutorial tenha sido útil para você começar a escrever suas próprias políticas e especificações.
