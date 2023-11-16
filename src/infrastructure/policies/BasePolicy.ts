@@ -15,7 +15,7 @@ export class BasePolicy implements IPolicy {
     /**
      * A boolean flag indicating whether the policy has been run or not.
      */
-    private runned: boolean = false;
+    private executed: boolean = false;
 
     /**
      * A map that stores the results of synchronous specification executions.
@@ -40,7 +40,7 @@ export class BasePolicy implements IPolicy {
      * @returns A boolean indicating whether the policy has any errors.
      */
     hasError() {
-        this.checkIfAllSpecificationsWereRunned();
+        this.checkIfAllSpecificationsWereExecuted();
 
         return this.specifications.some(specification => specification.hasError());
     }
@@ -50,7 +50,7 @@ export class BasePolicy implements IPolicy {
      * @returns An array of errors in the policy.
      */
     getErrors() {
-        this.checkIfAllSpecificationsWereRunned();
+        this.checkIfAllSpecificationsWereExecuted();
 
         return this.specifications.map(specification => specification.hasError()).filter(error => error !== null);
     }
@@ -60,7 +60,7 @@ export class BasePolicy implements IPolicy {
      * @returns A map of specification names and their results.
      */
     runAllSync() {
-        this.runned = true;
+        this.executed = true;
         
         this.specifications.forEach(specification => {
             this.executionSyncMapper.set(specification.name, specification.isSatisfied());
@@ -74,7 +74,7 @@ export class BasePolicy implements IPolicy {
      * @returns A map of specification names and their results.
      */
     async runAllAsync() {
-        this.runned = true;
+        this.executed = true;
         
         for (const specification of this.specifications) {
             const result = await specification.isSatisfied();
@@ -89,7 +89,7 @@ export class BasePolicy implements IPolicy {
      * @returns A boolean indicating whether all the specifications are satisfied.
      */
     checkIfAllSpecificationsAreSatisfied() {
-        this.checkIfAllSpecificationsWereRunned();
+        this.checkIfAllSpecificationsWereExecuted();
 
         return this.specifications.every(specification => specification.satisfied);
     }
@@ -98,8 +98,8 @@ export class BasePolicy implements IPolicy {
      * Checks if all the specifications have been run.
      * @throws An error if the policy has not been run.
      */
-    private checkIfAllSpecificationsWereRunned() { 
-        if (!this.runned) { 
+    private checkIfAllSpecificationsWereExecuted() { 
+        if (!this.executed) { 
             throw new Error("You must run the policy before checking for errors");
         }
     }

@@ -23,7 +23,7 @@ export class OrderFactory {
         const createOrderByUserPolicy = new CreateOrderByUserPolicy();
         createOrderByUserPolicy.addSpecification(new DrinksSpecification(user, products));
         createOrderByUserPolicy.addSpecification(new QuantitySpecification(products));
-        
+
         const callbackhandler = new PolicyCallbackHandler(
             createOrderByUserPolicy, [ 
                 { 
@@ -59,12 +59,12 @@ export class OrderFactory {
         
         const total = products.reduce((total, product) => total + (product.price * product.quantity), 0);
 
-        const orderProps ={
+        const orderProps = {
             id: randomUUID(),
             total,
             products: products.map(product => ({id: product.id, quantity: product.quantity})),
             date: new Date(),
-            userId: {id: user.id}
+            userId: {id: user.id }
         }
 
         return new Order(orderProps);
