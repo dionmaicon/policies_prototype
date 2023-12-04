@@ -1,12 +1,28 @@
 # Writing Policies and Specifications based on Eric Evans' DDD
 
-## Introduction
+## Implicit vs Explicit Rules
 
-Writing policies and specifications is an important part of software development, especially when following the Domain-Driven Design (DDD) approach by Eric Evans. Policies and specifications help define the expected behavior of the system in different scenarios and ensure that the software meets business requirements. We will explore how to write policies and specifications using DDD.
+When the project becomes too big with dozens, hundreds or thousands of rules. We need a method to handle the business requirements that hold the major features without breaking changes and, of course, can bring value to the project.  Eric Evans has a method to do that, making the moving from implicit to explicit restrictions an opportunity for advancement.
+Let's keep in mind Implicit restrictions as non-declarative rules that are coded in the domain layer (most of the time) by if, else, switch, etc and spread between aggregates, object-values, services and entities. These restrictions as non-declarative methods, tend to be hard to discover and hard to maintain.
+On the other hand, we can make use of declarative rules, for that, in an Object-oriented language, We use Objects. Declarative rules have a great impact on the way we can program, as we can bring to the software the functional requirements using the domain language, most likely assertively.
 
-## What are Policies and Specifications?
+## Specifications By Eric Evans
 
-Policies and specifications are rules that define the expected behavior of the system in different scenarios. Policies are generally more abstract and define the overall behavior of the system, while specifications are more detailed and define behavior in specific scenarios.
+The Specification declares a restriction over another object state, which may or may not be satisfied. There are 3 different purposes:
+ 
+1. To validate an Object - To verify if it can fit some needs or is ready for some purpose.
+2. To select an Object - To verify if it can be selected by filtered rules.
+3. To specify an Object Creation - To verify if it can fit some needs in an object creation process.
+
+<img src="https://content.clubedoblockchain.com.br/wp-content/uploads/2023/11/Specification.png" alt="Specifications DDD Book" width="1064" height="529" class="size-full wp-image-108" /> Specifications DDD Book
+
+## Policies vs Specifications
+
+Now that we have an introduction to Specification, I can present my approach to the problem.
+
+Both Policies and Specifications are rules that define the expected behavior of the system in different scenarios. Policies are generally more abstract and define the general behavior of the system, while specifications are more detailed and define behavior for specific scenarios.
+
+<img src="https://content.clubedoblockchain.com.br/wp-content/uploads/2023/11/Policy.png" alt="Policies and Specifications" width="1058" height="523" class="size-full wp-image-107" /> Policies and Specifications
 
 ## Writing Policies
 
@@ -69,3 +85,5 @@ export default class ProductToExpireSpecification extends BaseSpecification {
     }
 }
 ```
+
+
