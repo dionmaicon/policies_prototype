@@ -14,7 +14,7 @@ The Specification declares a restriction over another object state, which may or
 2. To select an Object - To verify if it can be selected by filtered rules.
 3. To specify an Object Creation - To verify if it can fit some needs in an object creation process.
 
-<img src="https://content.clubedoblockchain.com.br/wp-content/uploads/2023/11/Specification.png" alt="Specifications DDD Book" width="1064" height="529" class="size-full wp-image-108" /> Specifications DDD Book
+<img src="https://uploads.tcheblock.com/uploads/2025/03/Specification.png" alt="Specifications DDD Book" width="1064" height="529" class="size-full wp-image-108" /> Specifications DDD Book
 
 ## Policies vs Specifications
 
@@ -22,7 +22,7 @@ Now that we have an introduction to Specification, I can present my approach to 
 
 Both Policies and Specifications are rules that define the expected behavior of the system in different scenarios. Policies are generally more abstract and define the general behavior of the system, while specifications are more detailed and define behavior for specific scenarios.
 
-<img src="https://content.clubedoblockchain.com.br/wp-content/uploads/2023/11/Policy.png" alt="Policies and Specifications" width="1058" height="523" class="size-full wp-image-107" /> Policies and Specifications
+<img src="https://uploads.tcheblock.com/uploads/2023/11/Policy.png" alt="Policies and Specifications" width="1058" height="523" class="size-full wp-image-107" /> Policies and Specifications
 
 ## Writing Policies
 
